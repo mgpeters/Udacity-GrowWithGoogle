@@ -8,8 +8,10 @@ You've learned a lot about web development so far. I want you to take a moment t
 
 Your response goes here!
 
-- Though I have some experience with HTML, I have never used the "superscript," "horizontal rule," or "strikethrough." Furthermore, using the HTML elements reference on MDN has been fantastic. Such a great resource. I have also gotten more comfortable browsing the forums, finding answers to my questions that others have already asked.
+- Though I have some experience with HTML, I've never used the "superscript," "horizontal rule," or "strikethrough." Furthermore, using the HTML elements reference on MDN has been fantastic. Such a great resource. I have also gotten more comfortable browsing the forums and finding answers. Being comfortable cloning the (fairly easy) article was fun as well.
 
-- It's easy to look up what you need from an online source, or to ask a question for what you're looking for - even if you don't know the right terminology. Someone at some time pn the internet has already asked it!
+- It's easy to look up what you need from an online source, or to ask a question for what you're looking for - even if you don't know the right terminology. Someone at some time  has already asked it!
 
-- 
+- It's been difficult getting into the swing of a routine (it's been a while since I had class!), but a little everyday gets the ball rolling until it's unstoppable!
+
+- Really it's about reading, searching, and asking if need be. No one knows all the answers, but with the internet's collective conscious, you can find the answer to almost any problem.
