@@ -7,3 +7,9 @@ You've learned a lot about web development so far. I want you to take a moment t
 ---
 
 Your response goes here!
+
+- Though I have some experience with HTML, I have never used the "superscript," "horizontal rule," or "strikethrough." Furthermore, using the HTML elements reference on MDN has been fantastic. Such a great resource. I have also gotten more comfortable browsing the forums, finding answers to my questions that others have already asked.
+
+- It's easy to look up what you need from an online source, or to ask a question for what you're looking for - even if you don't know the right terminology. Someone at some time pn the internet has already asked it!
+
+- 
