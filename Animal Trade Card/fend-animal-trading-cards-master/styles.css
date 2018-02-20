@@ -2,24 +2,24 @@
 	display: inline-block;
 	text-align: center;
 }
-.card-image{
-	border-style: solid;
-	border-width: 1px;
-	border-color: black;
-	border-radius: 3px;
-}
 .border-div{
 	width: 320px;
 	border-style: solid;
-	border-radius: 5px;
-	border-color: black;
+	border-color: lightgrey;
+	border-width: .5px;
+	box-shadow: 5px 5px 2px lightgrey;
+	padding: 10px 3px 10px 3px;
+}
+.card-image{
+	border-style: solid;
+	border-width: 1px;
+	border-color: lightgrey;
 }
 .text-div{
 	width: 300px;
 	border-style: solid;
 	border-width: 1px;
-	border-color: black;
-	border-radius: 3px;
+	border-color: lightgrey;
 	display: inline-block;
 	text-align: center;
 }
