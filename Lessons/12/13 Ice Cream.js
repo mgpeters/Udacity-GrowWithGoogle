@@ -20,8 +20,8 @@ var vessel = "cone";
 var toppings = "cookis";
 
 // Add your code here
-if((flavor == "vanilla" || "chocolat") && (vessel == "cone" || "bowl") && (toppings == "sprinkles" || "peanuts")){
+if((flavor == "vanilla" || flavor == "chocolat") && (vessel == "cone" || vessel == "bowl") && (toppings == "sprinkles" || toppings == "peanuts")){
     console.log("I'd like two scoops of " + flavor + " ice cream in a " + vessel + " with " + toppings + ".");
 }else{
-    console.log("ERROR ERROR! ERROR!!!");
+    return;
 }
