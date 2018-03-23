@@ -15,15 +15,16 @@ Step four: now “#bruce” exists and you can append the necessary html for "hu
 Step five: append madison and hunter as children to “#bruce”`
 */
 
-var source, family2, bruce, children;
+var source, family2, bruce, madison, hunter;
 
 source = $("#family1").parent();
+family2 = $("<div id='family2'><h1>Family2</h1></div>");
+bruce = $('<div id="bruce"><h2>Bruce</h2></div>');
+madison = $("<div id='madison'><h3>Madison</h3></div>");
+hunter = $("<div id='hunter'><h3>Hunter</h3></div>");
 
-family2 = source.append("<div id='family2'><h1>Family2</h1></div>");
+source.append(family2);
+family2.append(bruce);
+bruce.append(madison);
+bruce.append(hunter);
 
-
-
-bruce = family2.append('<div id="bruce"><h2>Bruce</h2></div>');
-bruce;
-madison = $("<div id='madison'><h3>Madison</h3></div>").insertAfter("#bruce");
-hunter = $("<div id='hunter'><h3>Hunter</h3></div>").insertAfter("#bruce");
