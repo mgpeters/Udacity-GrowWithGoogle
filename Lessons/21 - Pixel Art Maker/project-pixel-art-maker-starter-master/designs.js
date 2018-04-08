@@ -2,7 +2,7 @@
 var gridHeight, gridWidth, boxColor;
 
 // Select color input
-$("input").on('click', function(){
+$("button").on('click', function(){
     gridHeight = $("#inputHeight").val();
     gridWidth = $("#inputWidth").val();
 
