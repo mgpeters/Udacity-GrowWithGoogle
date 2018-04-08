@@ -1,17 +1,21 @@
 
-var gridHeight, gridWidth, boxColor;
+$(document).ready(function(){
+    var gridHeight, gridWidth, boxColor;
 
-// Select color input
-$("button").on('click', function(){
-    gridHeight = $("#inputHeight").val();
-    gridWidth = $("#inputWidth").val();
+    function makeGrid() {
+        $("#pixelCanvas").append("<div id='gridCell'></div>");
+    }
+    // Select color input
+    $("#button").on('click', function(){
+        gridHeight = $("#inputHeight").val();
+        gridWidth = $("#inputWidth").val();
 
-    console.log("Height is :" + gridHeight + "\nWidth is :" + gridWidth);
+        alert("Height is :" + gridHeight + "\nWidth is :" + gridWidth);
+        
+        makeGrid();
+    });
+    // Select size input
+
+    // When size is submitted by the user, call makeGrid()
+
 });
-// Select size input
-
-// When size is submitted by the user, call makeGrid()
-
-function makeGrid() {
-
-}
