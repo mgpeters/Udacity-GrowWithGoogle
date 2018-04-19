@@ -1,10 +1,13 @@
 
 $(document).ready(function(){
-    var gridHeight, gridWidth, boxColor;
+    var gridHeight, gridWidth, boxColor,
+        cell = "<div id='gridCell'></div>";
 
     function makeGrid() {
-        $(".pixelCanvas").append("<div id='gridCell'></div>");
-       
+        
+        for(let x = 0; x < gridWidth; x += 1){
+            $(".pixelCanvas").append(cell);
+        }
     }
 
     $("#button").on('click', function(){

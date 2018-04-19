@@ -39,9 +39,11 @@ input[type=number] {
     width: 6em;
 }
 .pixelCanvas{
-    align: center;
+    margin: 0 auto;
+    width: 100px;
 }
 #gridCell {
+    /*text-align: center;*/
     width: 10px;
     height: 10px;
     border: 1px solid black;
