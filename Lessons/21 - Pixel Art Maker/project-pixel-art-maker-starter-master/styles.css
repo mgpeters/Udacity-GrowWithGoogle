@@ -39,13 +39,17 @@ input[type=number] {
     width: 6em;
 }
 .pixelCanvas{
+    position: relative;
     margin: 0 auto;
-    width: 100px;
+    width: 960px;
+    height: 960px;
+    padding: 0;
+    border: none;
 
 }
 #gridCell {
-    width: 10px;
-    height: 10px;
+    width: 30px;
+    height: 30px;
     outline: 1px solid black;
     display: inline-block;
     margin: 0px;
