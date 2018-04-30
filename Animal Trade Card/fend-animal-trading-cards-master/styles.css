@@ -1,11 +1,12 @@
-.field{
+/* add your CSS here */
+body{
 	margin: auto;
 	width: 50%;
 	display: inline-block;
 	text-align: center;
 
 }
-.border-div{
+#container{
 	width: 320px;
 	border-style: solid;
 	border-color: lightgrey;
@@ -13,16 +14,16 @@
 	box-shadow: 5px 5px 2px lightgrey;
 	padding: 5px 3px 13px 3px;
 }
-.title{
+h1{
 	text-align: left;
 	padding: 0px 0px 0px 10px;
 }
-.card-image{
+img{
 	border-style: solid;
 	border-width: 1px;
 	border-color: lightgrey;
 }
-.text-div{
+#card{
 	width: 300px;
 	border-style: solid;
 	border-width: 1px;
@@ -32,7 +33,15 @@
 	margin-top: 10px;
 	/*padding: 5px 5px 5px 5px;*/
 }
-.contents{
+p{
 	text-align: left;
 	padding: 0px 0px 0px 10px;
+  font-style: italic;
+}
+ul{
+ list-style-type: none;
+  text-align: left;
+}
+span{
+ font-weight: bold; 
 }
