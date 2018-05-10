@@ -100,14 +100,15 @@ ul {
   display: inline-block;
   width: 24%;
   text-align: center;
-  line-height: 48px;
-  padding: 48px;
+  line-height: 24px;
+  padding: 24px;
   text-transform: uppercase;
 }
 
 .nav a {
   text-decoration: none;
   color: #616161;
+  padding: 1.5em;
 }
 
 .nav a:hover {
