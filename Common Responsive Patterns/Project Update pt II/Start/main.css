@@ -43,8 +43,16 @@ ul {
 display: flex;
 flex-wrap: wrap;
 }
-@media screen and (min-width: 320px){
-
+@media screen and (max-width: 320px){
+  .header__inner,
+  .nav,
+  .hero,
+  .top-news,
+  .scores,
+  .weather,
+  .recent-news {
+    width:100%;
+  }
 }
 @media screen and (min-width: 600px){
 
