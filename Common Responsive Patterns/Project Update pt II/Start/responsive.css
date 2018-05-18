@@ -1,8 +1,21 @@
-@media screen and (min-width: 320px){
-
+.content{
+    display: flex;
+    flex-wrap: wrap;
 }
-@media screen and (min-width: 768px){
-    
+
+@media screen and (max-width: 549px){
+    .nav{
+        width: 300px;
+        height: 50%;
+        position: absolute;
+        transform: translate(-300px, 0);
+        transition: transform 0.3s ease;
+    }
+}
+@media screen and (min-width: 550px){
+    .hero{
+        width: 50%;
+    }
 }
 @media screen and (min-width: 950px){
     
