@@ -95,7 +95,13 @@ ul {
   margin-left: auto;
   margin-right: auto;
 }
-
+.nav-toggle {
+  right: 0;
+  top: 10px;
+  position: fixed;
+  width: 4em;
+  z-index: 1;
+}
 .nav__list {
   width: 100%;
   padding: 0;
