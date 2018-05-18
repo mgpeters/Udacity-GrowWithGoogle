@@ -1,5 +1,4 @@
-body, 
-html {
+body, html {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -12,20 +11,11 @@ body {
   color: #424242;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5 {
+h1, h2, h3, h4, h5 {
   margin: 0; 
 }
 
-header,
-nav, 
-footer, 
-section, 
-article, 
-div {
+header, nav, footer, section, article, div {
   box-sizing: border-box;
 }
 
@@ -34,42 +24,8 @@ ul {
   padding: 0;
   margin: 0;
 }
-img {
-  max-width: 100%;
-}
-/*
- *
- * Breakpoints
- *
- */
-.content{
-display: flex;
-flex-wrap: wrap;
-}
-@media screen and (min-width: 320px){
-  .header,
-  .header__inner,
-  .nav,
-  .hero,
-  .top-news,
-  .scores,
-  .weather,
-  .recent-news {
-    width: 100%;
-  }
-}
-@media screen and (min-width: 650px){
-  .header, .nav{
-    width: 100%;
-  }
-  .hero, .top-news, .scores, .weather{
-    width: 50%;
-    flex-wrap: wrap;
-  } 
-}
-@media screen and (min-width: 900px){
 
-}
+
 /*
  *
  * Common
@@ -185,7 +141,7 @@ main {
  */
 
 .hero {
-  /*width: 100%;*/
+  width: 100%;
   position: relative;
   background-image: url("./images/dog.jpg");
   background-size: cover;
@@ -212,9 +168,10 @@ main {
  */
 
 .top-news {
-  height: 300px;
+  max-height: 300px;
   border-bottom: 1px solid #E0E0E0;
   padding: 1em;
+  width: 100%;
 }
 
 .news__title {
@@ -241,6 +198,7 @@ main {
 .top-news__item a {
   text-decoration: none;
   color: #666;
+  padding: 1.5em inherit;
 }
 
 .top-news__item a:hover,
@@ -257,6 +215,7 @@ main {
 
 .scores {
   padding-top: 1em;
+  flex-grow: 1;
 }
 
 .scores__table {
@@ -303,6 +262,7 @@ main {
  */
 
 .weather {
+  flex-grow: 1;
   padding: 1em;
 }
 
@@ -357,6 +317,7 @@ main {
  */
 
 .recent-news {
+  flex-grow: 1;
   clear: both;
   padding: 1em;
 }
@@ -379,6 +340,7 @@ main {
 .snippet__title a {
   text-decoration: none;
   color: #666;
+  padding: 1.5em inherit;
 }
 
 .snippet__title a:hover,
