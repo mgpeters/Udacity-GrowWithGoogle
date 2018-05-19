@@ -4,13 +4,17 @@
 }
 
 @media screen and (max-width: 599px){
-    .nav{
+    .nav {
+        z-index: 10;
+        background-color: #fff;
         width: 300px;
-        height: 50%;
         position: absolute;
-        transform: translate(-300px, 0);
+        /* This trasform moves the drawer off canvas. */
+        -webkit-transform: translate(-350px, 0);
+        transform: translate(-350px, 0);
+        /* Optionally, we animate the drawer. */
         transition: transform 0.3s ease;
-    }
+      }
     /*.header__title { 
         font-size: calc(16px + 6 * ((100vw - 320px) / 680));
      }*/
