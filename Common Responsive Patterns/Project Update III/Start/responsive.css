@@ -61,6 +61,9 @@
   .snippet p {
     font-size: 15px;
   }
+  .snippet__thumbnail{
+    display: none;
+  }
 }
 
 @media screen and (min-width: 550px) {
@@ -72,7 +75,12 @@
     order: 1;
     width: 40%;
   }
-
+  .recent-news{
+    max-width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
 }
 
 @media screen and (min-width: 700px) {
@@ -89,6 +97,9 @@
   }
   .weather {
     order: 3;
+  }
+  .snippet {
+    max-width: 500px;
   }
 }
 
