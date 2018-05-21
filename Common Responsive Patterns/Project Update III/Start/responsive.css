@@ -52,6 +52,13 @@
     width: 32px;
     fill: #E0E0E0;
   }
+  .scores__location{
+    display: none;
+  }
+  .td {
+    text-align: center;
+  }
+
 }
 
 @media screen and (min-width: 550px) {
