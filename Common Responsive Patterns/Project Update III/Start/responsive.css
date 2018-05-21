@@ -55,10 +55,12 @@
   .scores__location{
     display: none;
   }
-  .td {
-    text-align: center;
+ .top-news{
+   font-size: 15px;
+ }
+  .snippet p {
+    font-size: 15px;
   }
-
 }
 
 @media screen and (min-width: 550px) {
@@ -70,6 +72,7 @@
     order: 1;
     width: 40%;
   }
+
 }
 
 @media screen and (min-width: 700px) {
