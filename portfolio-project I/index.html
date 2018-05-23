@@ -1,50 +1,52 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+  <head>    
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>mgp Creations</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="css/styles.css">
-
-    <!-- the below three lines are a fix to get HTML5 semantic elements working in old versions of Internet Explorer-->
-    <!--[if lt IE 9]>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
   </head>
-
   <body>
-    <header>
+    <header class="header">
       <h1>Matt Peters</h1>
       <h3>Front-End Ninja</h3>
     </header>
     <!-- Here is our page's main content -->
     <main>
-      <!-- It contains an article -->
-        <div class="container">
-            <div class="main-photo-div">
-                <img class="main-photo" src="img/header-photo.jpg">
-            </div>
-                
-            <article>
+    <div class="container">
+        <section class="main-photo">
+                <img class="photo" src="img/header-photo.jpg" alt="main-photo">
+        </section>
+       <!-- <section class="featured"> -->
+            <div class="featured-work-title">
                 <h2>Featured Work</h2>
-                    <div class="featured-work1">
-                        <img class="placeholder-photo" src="img/placeholder.png">
-                    </div>
-                    <div class="featured-work2">
-                        <img class="placeholder-photo" src="img/placeholder.png">        
-                    </div>
-                    <div class="featured-work3">
-                        <img class="placeholder-photo" src="img/placeholder.png">
-                    </div>
-            </article>
+            </div>
+                <div class="photo-box">
+                    <img class="placeholder-photo" src="img/placeholder.png" alt="placeholder-photo">
+                    <p class="featured-text">Add Later</p>
+                </div>
+
+                <div class="photo-box">
+                    <img class="placeholder-photo" src="img/placeholder.png" alt="placeholder-photo">
+                    <p class="featured-text">Add Later</p>
+                </div>   
+
+                <div class="photo-box">
+                    <img class="placeholder-photo" src="img/placeholder.png" alt="placeholder-photo">
+                    <p class="featured-text">Add Later</p>
+                </div>
+                    
                 <!-- the aside content can also be nested within the main content -->  
+       <!-- </section>-->
+    </div>
+    <!-- And here is our main footer that is used across all the pages of our website -->
+        <footer>                   
+        <div class="footer-div">
+            <p>©Copyright 2018 by Matt Peters. All rights reversed.</p>
         </div>
-    </main>  
-            <!-- And here is our main footer that is used across all the pages of our website -->
-        <footer>
-            <div class="footer-div>"
-                <p>©Copyright 2018 by Matt Peters. All rights reversed.</p>    
-            </
         </footer>
+    </main>  
   </body>
 </html>

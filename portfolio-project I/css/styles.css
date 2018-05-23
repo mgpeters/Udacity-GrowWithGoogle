@@ -1,9 +1,11 @@
-.container{
+.container {
     display: flex;
     flex-wrap: wrap;
 }
-
 .main-photo {
     width: 100%;
+}
+.photo{
+    width: 850px;
     height: 400px;
 }
