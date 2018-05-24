@@ -15,7 +15,11 @@ body, html {
 header {
     height: 500px;
 }
-
+.header__logo {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+}
 .header__logo--photo {
     display: inline-block;
     float: left;
@@ -42,10 +46,10 @@ header {
 
 /* Featured Work */
 
-.featured-work-title {
+.featured__work-title {
     width: 100%;
 }
-.photo-box{
+.featured__photos--photo-box {
     width: 33.33%;
     text-align: center;
 }
@@ -53,7 +57,7 @@ header {
 /* Responsive CSS Section */
 
 @media screen and (max-width: 549px) {
-    .photo-box {
+    .featured__photos--photo-box {
         width: 100%;
     }
 }
