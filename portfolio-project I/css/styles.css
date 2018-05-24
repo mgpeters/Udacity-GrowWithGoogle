@@ -10,10 +10,14 @@ body, html {
     display: flex;
     flex-wrap: wrap;
 }
-
+main {
+    display: block;
+}
 /* Header */
+
 header {
     height: 500px;
+    display: block;
 }
 .header__logo {
     display: inline-block;
@@ -26,6 +30,10 @@ header {
     float: left;
     width: 90px;
     height: 90px;
+    border: solid;
+    border-width: 1px;
+    border-color: black;
+    border-radius: 3px;
 }
 .header__title {
     display: inline-block;
@@ -42,7 +50,9 @@ header {
     position: relative;
     background-image: url('../img/header-photo.jpg');
     background-size: cover;
-    height: 400px;
+    height: 375px;
+    padding: 5px 5px 5px 5px;
+    margin: 5px 5px 5px 5px;
 }
 
 /* Featured Work */
