@@ -12,6 +12,9 @@ body, html {
 }
 
 /* Header */
+header {
+    height: 500px;
+}
 
 .header__logo--photo {
     display: inline-block;
@@ -24,14 +27,16 @@ body, html {
     float: right;
     text-align: right;
 }
-.main-photo {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+.header__photo {
+    display: inline-block;
+    height: 300px;
 }
-.photo{
-    max-width: 600px;
-    height: 400px;
+.header__photo--main {
+    width: 100%;
+    position: relative;
+    background-image: url(./img/header-photo.jpg);
+    background-size: cover;
+    height: 300px;
 }
 
 /* Featured Work */
