@@ -14,10 +14,14 @@ body, html {
 /* Header */
 
 .header__logo--photo {
+    display: inline-block;
+    float: left;
     width: 70px;
     height: 70px;
 }
-.header {
+.header__title {
+    display: inline-block;
+    float: right;
     text-align: right;
 }
 .main-photo {
