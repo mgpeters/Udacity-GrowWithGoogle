@@ -28,15 +28,16 @@ header {
     text-align: right;
 }
 .header__photo {
-    max-width: 800px;
+    width: 100%;
     display: inline-block;
-    height: 300px;
+    height: 400px;
 }
 .header__photo--main {
+    max-width: 100%;
     position: relative;
     background-image: url('../img/header-photo.jpg');
     background-size: cover;
-    height: 300px;
+    height: 400px;
 }
 
 /* Featured Work */
