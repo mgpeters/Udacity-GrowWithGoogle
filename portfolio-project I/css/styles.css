@@ -44,9 +44,8 @@ hr {
     display: block;
     height: 1px;
     border: 0;
-    border-top: 1px solid #7d97ad;
+    border-top: 3px solid #7d97ad;
     margin: 1em 0;
-    padding: 0;
 }
 .header__photo {
     width: 100%;
@@ -59,8 +58,6 @@ hr {
     background-image: url('../img/header-photo.jpg');
     background-size: cover;
     height: 375px;
-    padding: 5px 5px 5px 5px;
-    margin: 5px 5px 5px 5px;
 }
 
 /* Featured Work */
