@@ -86,12 +86,20 @@ hr {
 /* Responsive CSS Section */
 
 @media screen and (max-width: 549px) {
+    header {
+        height: 330px;
+    }
+    .header__photo--main {
+        height: 200px;
+    }
     .featured__photos--photo-box {
         width: 100%;
     }
 }
 @media screen and (min-width: 550px) {
-
+    .featured__photos--photo-box {
+        width: 50%;
+    }
 }
 @media screen and (min-width: 700px) {
 
