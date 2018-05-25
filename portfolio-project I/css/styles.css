@@ -13,7 +13,7 @@ body, html {
 main {
     display: block;
 }
-h1, h2, h3, p {
+h1, h2, h6, p {
     font-family: 'Raleway', sans-serif;
 }
 /* Header */
@@ -38,6 +38,16 @@ header {
     display: inline-block;
     float: right;
     text-align: right;
+    padding: 2px 2px 2px 2px;
+    margin: 0px 5px 0px 0px;
+}
+#header__title--name {
+    margin: 35px 0px 5px 0px;
+    color: #2d3c49;
+}
+#header__title--subname {
+    margin-top: 5px;
+    color: #2d3c49;
 }
 hr {
     display: block;
