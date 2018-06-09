@@ -1,11 +1,18 @@
 // Select color input
-let color = document.querySelector('#colorPicker').value,
+let color,
+    width,
+    height;
+    
+    function grabColor(){
+        color = document.querySelector('#colorPicker').value
+    }
 
 // Select size input
+    function grabWidthAndHeight(){
     height = document.querySelector("#inputHeight").value,
     width = document.querySelector("#inputWidth").value;
+    }    
 
-    console.log(`The height is ${height} and the width is ${width}`);
 // When size is submitted by the user, call makeGrid()
 
 function makeGrid() {
