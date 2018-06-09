@@ -1,10 +1,15 @@
-// Select color input
-let color,
+// Declared Variables
+
+let pixelCanvas = document.getElementById('pixelCanvas'),
+    submitButton = document.getElementById('submitButton'),
+    color,
     width,
     height;
     
+
+// Select color input
     function grabColor(){
-        color = document.querySelector('#colorPicker').value
+        color = document.querySelector('#colorPicker').value;
     }
 
 // Select size input
@@ -17,5 +22,7 @@ let color,
 
 function makeGrid() {
     // Your code goes here!
+    pixelCanvas.insertAdjacentHTML('afterbegin', '<div class="pixelContainerDiv"></div>');
   }
-  
+
+  submitButton.addEventListener('click', makeGrid);
