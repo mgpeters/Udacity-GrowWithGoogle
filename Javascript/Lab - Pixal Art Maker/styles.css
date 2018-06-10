@@ -44,6 +44,6 @@ body {
       border: 1px;
       border-color: black;
   }*/
-  table, td, tr {
+  table, td {
       border: 1px solid black;
   }

@@ -36,11 +36,13 @@ function makeGrid() {
     grabWidthAndHeight();
 
     for (let i = 0; i < height; i += 1){
+        pixelCanvas.insertRow(0)
+        console.log("row");
         for(let x = 0; x < width; x += 1){
             //containerDiv.appendChild(divCell);
-            cell;
+            pixelCanvas.insertRow(0).insertCell(0);
+            console.log("cell")
         }
-        row;
         //containerDiv.insertAdjacentHTML('beforeend', br);
     }
   }
