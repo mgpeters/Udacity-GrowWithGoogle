@@ -52,8 +52,9 @@ function makeGrid() {
           cell.addEventListener('click', colorFill);
         }
     }
+    event.preventDefault();
   }
 
   //submitButton.addEventListener('click', makeGrid);
 
-  makeGrid();
+  submitButton.addEventListener('click', makeGrid);
