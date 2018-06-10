@@ -1,12 +1,9 @@
 // Declared Variables
 
-let pixelCanvas = document.getElementById('pixelCanvas'), //Grabs the table
-    submitButton = document.getElementById('submitButton'),
-    row = pixelCanvas.insertRow(0),
-    cell = row.insertCell(0),
-    divCell = '<div class="divCell"></div>',
-    br = '</br>',
-    color,
+const   pixelCanvas = document.getElementById('pixelCanvas'), //Grabs the table
+        submitButton = document.getElementById('submitButton');
+
+let color,
     width,
     height;
     
@@ -36,12 +33,11 @@ function makeGrid() {
     grabWidthAndHeight();
 
     for (let i = 0; i < height; i += 1){
-        pixelCanvas.insertRow(0)
-        console.log("row");
+        let row = pixelCanvas.insertRow(i);
+
         for(let x = 0; x < width; x += 1){
             //containerDiv.appendChild(divCell);
-            pixelCanvas.insertRow(0).insertCell(0);
-            console.log("cell")
+          let cell = row.insertCell(x);
         }
         //containerDiv.insertAdjacentHTML('beforeend', br);
     }
