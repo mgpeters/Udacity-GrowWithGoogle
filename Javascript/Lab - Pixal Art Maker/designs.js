@@ -1,7 +1,9 @@
 // Declared Variables
 
-let pixelCanvas = document.getElementById('pixelCanvas'),
+let pixelCanvas = document.getElementById('pixelCanvas'), //Grabs the table
     submitButton = document.getElementById('submitButton'),
+    row = pixelCanvas.insertRow(0),
+    cell = row.insertCell(0),
     divCell = '<div class="divCell"></div>',
     br = '</br>',
     color,
@@ -35,9 +37,11 @@ function makeGrid() {
 
     for (let i = 0; i < height; i += 1){
         for(let x = 0; x < width; x += 1){
-            containerDiv.appendChild(divCell);
+            //containerDiv.appendChild(divCell);
+            cell;
         }
-        containerDiv.insertAdjacentHTML('beforeend', br);
+        row;
+        //containerDiv.insertAdjacentHTML('beforeend', br);
     }
   }
 
