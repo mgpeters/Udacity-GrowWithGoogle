@@ -1,7 +1,8 @@
 // Declared Variables
 
 const   pixelCanvas = document.getElementById('pixelCanvas'), //Grabs the table
-        submitButton = document.getElementById('submitButton');
+        submitButton = document.getElementById('submitButton'),
+        colorPicker = document.querySelector('#colorPicker');
 
 let color,
     width,
@@ -23,7 +24,6 @@ function colorFill(){
 function grabWidthAndHeight(){
     height = document.querySelector("#inputHeight").value,
     width = document.querySelector("#inputWidth").value;
-    console.log(`WORKED! - Height: ${height} Width: ${width}`);
 }    
 
 //Clears grid
@@ -55,6 +55,10 @@ function makeGrid() {
     event.preventDefault();
   }
 
-  //submitButton.addEventListener('click', makeGrid);
+// Event listeners
+document.addEventListener('DOMContentLoaded', function(){
+    colorPicker.onchange=grabColor;
+}, false);
 
   submitButton.addEventListener('click', makeGrid);
+
