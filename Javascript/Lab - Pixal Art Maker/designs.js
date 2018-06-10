@@ -25,7 +25,9 @@ let pixelCanvas = document.getElementById('pixelCanvas'),
 
 function makeGrid() {
     // Your code goes here!
-    pixelCanvas.insertAdjacentHTML('afterbegin', '<div id="pixelContainerDiv"></div>');
+    //Possibly Not Needed - pixelCanvas.insertAdjacentHTML('afterbegin', '<div id="pixelContainerDiv"></div>');
+
+    let containerDiv = document.createElement('div');    
 
     // Possibly not needed - let pixelContainerDiv = document.getElementById('pixelContainerDiv');
 
@@ -33,7 +35,7 @@ function makeGrid() {
 
     for (let i = 0; i < height; i += 1){
         for(let x = 0; x < width; x += 1){
-            pixelCanvas.insertAdjacentHTML('afterbegin', divCell);
+            pixelCanvas.appendChild(divCell);
         }
         pixelCanvas.insertAdjacentHTML('beforeend', br);
     }
