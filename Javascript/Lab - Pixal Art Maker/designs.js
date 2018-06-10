@@ -35,9 +35,9 @@ function makeGrid() {
 
     for (let i = 0; i < height; i += 1){
         for(let x = 0; x < width; x += 1){
-            pixelCanvas.appendChild(divCell);
+            containerDiv.appendChild(divCell);
         }
-        pixelCanvas.insertAdjacentHTML('beforeend', br);
+        containerDiv.insertAdjacentHTML('beforeend', br);
     }
   }
 
