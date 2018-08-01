@@ -1,5 +1,4 @@
 const   main = document.getElementById('main'),
-        catPhoto = document.querySelectorAll('cat-photo-main'),
         counterSpan = document.querySelectorAll('counter__number');
 
 let cat1 = new Animal('tabby', '../img/d8472a04-0d67-4dfe-ba33-faae2ef90ffd.jpg'),
@@ -11,7 +10,7 @@ function Animal(name, photoPath){
     this.name = name,
     this.photoPath = photoPath,
     this.htmlInject = ` <div class="counter">
-                            <span class="counter__number">${this.counter}</span>
+                            <span class="counter__number">0</span>
                         </div>
                         <div class="cat-name">
                             <span class="cat-name__inner">${this.name}</span>
@@ -20,16 +19,21 @@ function Animal(name, photoPath){
                             <img class="cat-photo-main" src="${this.photoPath}" alt="cat-photo">
                         </div>`
 }
-console.log(main);
 for(let x = 0; x < catArray.length; x += 1){
     let z = document.createElement('div');
+    z.className = `cat${x}`;
     z.innerHTML = catArray[x].htmlInject;
     main.appendChild(z);
 }
 
-catPhoto[0].addEventListener('click', function(){
-  //the element has been clicked... do stuff here
-    this.counter += 1;
+let    catPhoto = document.querySelectorAll('img');
 
-    this.counter__number.innerHTML = this.counter;
-}, false);
+    catPhoto[0].addEventListener('click', function(event){
+        //the element has been clicked... do stuff here
+            console.log(event.counter);
+          this.counter += 1;
+      
+          event.counter__number.innerHTML = event.counter;
+      }, false);
+      
+console.log(catPhoto);
