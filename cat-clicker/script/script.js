@@ -24,16 +24,14 @@ for(let x = 0; x < catArray.length; x += 1){
     z.className = `cat${x}`;
     z.innerHTML = catArray[x].htmlInject;
     main.appendChild(z);
-}
 
-let    catPhoto = document.querySelectorAll('img');
+let catPhoto = document.querySelectorAll('img'),
+    catCounter = document.getElementsByClassName('counter__number');
 
-    catPhoto[0].addEventListener('click', function(event){
+    catPhoto[x].addEventListener('click', function(){
         //the element has been clicked... do stuff here
-            console.log(event.counter);
-          this.counter += 1;
-      
-          event.counter__number.innerHTML = event.counter;
+          catArray[x].counter += 1;
+          catCounter[x].innerHTML = catArray[x].counter;
       }, false);
+}
       
-console.log(catPhoto);
