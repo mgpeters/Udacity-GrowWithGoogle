@@ -1,9 +1,12 @@
 const   main = document.getElementById('main'),
         counterSpan = document.querySelectorAll('counter__number');
 
-let cat1 = new Animal('tabby', '../img/d8472a04-0d67-4dfe-ba33-faae2ef90ffd.jpg'),
-    cat2 = new Animal('isla', '../img/Cat03.jpg'),
-    catArray = [cat1, cat2];
+let catArray = [tabby = new Animal('tabby', '../img/cat01.jpeg'),
+                isla = new Animal('isla', '../img/cat02.jpg.jpg'),
+                mittins = new Animal('mittins', '../img/cat03.jpg'),
+                blue = new Animal('blue', '../img/cat04.jpeg'),
+                red = new Animal('red', "../img/cat05.jpg")
+                ];
 
 function Animal(name, photoPath){
     this.counter = 0,
