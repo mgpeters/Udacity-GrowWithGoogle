@@ -1,11 +1,11 @@
 const   main = document.getElementById('main'),
-        counterSpan = document.querySelectorAll('counter__number');
+        catList = document.getElementById('cat-chart__list');
 
 let catArray = [tabby = new Animal('tabby', '../img/cat01.jpeg'),
-                isla = new Animal('isla', '../img/cat02.jpg.jpg'),
+                isla = new Animal('isla', '../img/cat02.jpg'),
                 mittins = new Animal('mittins', '../img/cat03.jpg'),
                 blue = new Animal('blue', '../img/cat04.jpeg'),
-                red = new Animal('red', "../img/cat05.jpg")
+                red = new Animal('red', '../img/cat05.jpg')
                 ];
 
 function Animal(name, photoPath){
@@ -22,6 +22,15 @@ function Animal(name, photoPath){
                             <img class="cat-photo-main" src="${this.photoPath}" alt="cat-photo">
                         </div>`
 }
+//Display list of Cats
+for(let x = 0; x < catArray.length; x += 1){
+    let z = document.createElement('li');
+    z.className = 'cat-chart__list';
+    z.innerHTML = catArray[x].name;
+    catList.appendChild(z);
+}
+
+// Display Cat Photos
 for(let x = 0; x < catArray.length; x += 1){
     let z = document.createElement('div');
     z.className = `cat${x}`;
