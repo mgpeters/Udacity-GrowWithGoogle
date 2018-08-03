@@ -1,4 +1,5 @@
 const   main = document.getElementById('main'),
+        catDisplay = document.getElementById('cat-display'),
         catList = document.getElementById('cat-chart__list');
 
 let catArray = [tabby = new Animal('tabby', '../img/cat01.jpeg'),
@@ -35,7 +36,7 @@ for(let x = 0; x < catArray.length; x += 1){
     let z = document.createElement('div');
     z.className = `cat-box cat${x}`;
     z.innerHTML = catArray[x].htmlInject;
-    main.appendChild(z);
+    catDisplay.appendChild(z);
 
 let catPhoto = document.querySelectorAll('img'),
     catCounter = document.getElementsByClassName('counter__number');
