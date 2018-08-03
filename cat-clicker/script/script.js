@@ -33,7 +33,7 @@ for(let x = 0; x < catArray.length; x += 1){
 // Display Cat Photos
 for(let x = 0; x < catArray.length; x += 1){
     let z = document.createElement('div');
-    z.className = `cat${x}`;
+    z.className = `cat-box cat${x}`;
     z.innerHTML = catArray[x].htmlInject;
     main.appendChild(z);
 

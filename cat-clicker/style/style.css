@@ -26,6 +26,12 @@ img{
     height: 200px; }
   
   /* Body */  
+  #cat-display{
+      position: relative;
+  }
+  .cat-box{
+      position: absolute;
+  }
   /* Featured Work */
   /* Footer */
   footer {
