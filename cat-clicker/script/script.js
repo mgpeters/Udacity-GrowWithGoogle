@@ -7,7 +7,8 @@ let catArray = [tabby = new Animal('tabby', '../img/cat01.jpeg'),
                 mittins = new Animal('mittins', '../img/cat03.jpg'),
                 blue = new Animal('blue', '../img/cat04.jpeg'),
                 red = new Animal('red', '../img/cat05.jpg')
-                ];
+                ],
+    prior;
 
 function Animal(name, photoPath){
     this.counter = 0,
@@ -24,23 +25,32 @@ function Animal(name, photoPath){
                         </div>`
 }
 function toggle_visibility(input) { // https://css-tricks.com/snippets/javascript/showhide-element/ 08/03/18
-    console.log("toggle vis input");    
-    console.log(input);
+    let idLi = document.getElementById(input),
+        touched = document.getElementsByClassName('input-touched');
+        console.log(prior);
 
-    let idLi = document.getElementById(input);
-
-    console.log(idLi);
+        if(prior != undefined){
+            prior.style.visibility = 'hidden';
+        }
+        /*if(!touched[0] == undefined){
+            touched[0].style.visibility = 'hidden';
+            touched[0].classList.remove('input-touched');
+        }*/
 
         if(idLi.style.visibility == 'hidden'){
             idLi.style.visibility = 'visible';
+            idLi.setAttribute('class',`cat-box input-touched`);
         }else{
             idLi.style.visibility = 'hidden';
         }
+        prior = idLi;
+
+        //touched = document.getElementsByClassName('input-touched');
 }
 //Display list of Cats
 for(let x = 0; x < catArray.length; x += 1){
     let z = document.createElement('li');
-    z.className = `cat-chart__list__li cat${x}`;
+    z.className = `cat-chart__list__li`;
     z.innerHTML = catArray[x].name;
     catList.appendChild(z);
 
@@ -48,7 +58,6 @@ for(let x = 0; x < catArray.length; x += 1){
     
     catListIndividual[x].addEventListener('click', function(event){
         let name = catListIndividual[x].innerHTML;
-            console.log(name);
 
         toggle_visibility(name);
     })
@@ -58,7 +67,7 @@ for(let x = 0; x < catArray.length; x += 1){
 // Display Cat Photos
 for(let x = 0; x < catArray.length; x += 1){
     let z = document.createElement('div');
-    z.className = `cat-box cat${x}`;
+    z.className = `cat-box`;
     z.id = `${catArray[x].name}`;
     z.setAttribute('style', 'visibility: hidden');
     z.innerHTML = catArray[x].htmlInject;
