@@ -23,31 +23,43 @@ function Animal(name, photoPath){
                             <img class="cat-photo-main" src="${this.photoPath}" alt="cat-photo">
                         </div>`
 }
-function toggle_visibility(event) { // https://css-tricks.com/snippets/javascript/showhide-element/ 08/03/18
-    var target = this.innerHTML,
-        e = document.getElementsByClassName(target);
-        console.log(target);
-        console.log(e);
+function toggle_visibility(input) { // https://css-tricks.com/snippets/javascript/showhide-element/ 08/03/18
+    console.log("toggle vis input");    
+    console.log(input);
 
-        if(e.style.visibility == 'hidden'){
-            e.style.visibility = 'visible';
+    let idLi = document.getElementById(input);
+
+    console.log(idLi);
+
+        if(idLi.style.visibility == 'hidden'){
+            idLi.style.visibility = 'visible';
         }else{
-            e.style.display = 'hidden';
+            idLi.style.visibility = 'hidden';
         }
 }
 //Display list of Cats
 for(let x = 0; x < catArray.length; x += 1){
     let z = document.createElement('li');
-    z.className = `cat-chart__list cat${x} ${catArray[x].name}`;
+    z.className = `cat-chart__list__li cat${x}`;
     z.innerHTML = catArray[x].name;
     catList.appendChild(z);
+
+    let catListIndividual = document.getElementsByClassName('cat-chart__list__li');
+    
+    catListIndividual[x].addEventListener('click', function(event){
+        let name = catListIndividual[x].innerHTML;
+            console.log(name);
+
+        toggle_visibility(name);
+    })
 
 }
 
 // Display Cat Photos
 for(let x = 0; x < catArray.length; x += 1){
     let z = document.createElement('div');
-    z.className = `cat-box cat${x} ${catArray[x].name}`;
+    z.className = `cat-box cat${x}`;
+    z.id = `${catArray[x].name}`;
     z.setAttribute('style', 'visibility: hidden');
     z.innerHTML = catArray[x].htmlInject;
     catDisplay.appendChild(z);
@@ -61,4 +73,3 @@ let catPhoto = document.querySelectorAll('img'),
           catCounter[x].innerHTML = catArray[x].counter;
       }, false);
 }
-      
