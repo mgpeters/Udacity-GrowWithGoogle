@@ -31,7 +31,7 @@ img{
   }
   .cat-box{
       position: absolute;
-      visibility: hidden;
+     /*visibility: hidden;*/
   }
   /* Featured Work */
   /* Footer */

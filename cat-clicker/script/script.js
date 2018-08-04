@@ -23,18 +23,32 @@ function Animal(name, photoPath){
                             <img class="cat-photo-main" src="${this.photoPath}" alt="cat-photo">
                         </div>`
 }
+function toggle_visibility(event) { // https://css-tricks.com/snippets/javascript/showhide-element/ 08/03/18
+    var target = this.innerHTML,
+        e = document.getElementsByClassName(target);
+        console.log(target);
+        console.log(e);
+
+        if(e.style.visibility == 'hidden'){
+            e.style.visibility = 'visible';
+        }else{
+            e.style.display = 'hidden';
+        }
+}
 //Display list of Cats
 for(let x = 0; x < catArray.length; x += 1){
     let z = document.createElement('li');
-    z.className = 'cat-chart__list';
+    z.className = `cat-chart__list cat${x} ${catArray[x].name}`;
     z.innerHTML = catArray[x].name;
     catList.appendChild(z);
+
 }
 
 // Display Cat Photos
 for(let x = 0; x < catArray.length; x += 1){
     let z = document.createElement('div');
-    z.className = `cat-box cat${x}`;
+    z.className = `cat-box cat${x} ${catArray[x].name}`;
+    z.setAttribute('style', 'visibility: hidden');
     z.innerHTML = catArray[x].htmlInject;
     catDisplay.appendChild(z);
 
