@@ -8,7 +8,9 @@ let catArray = [tabby = new Animal('tabby', '../img/cat01.jpeg'),
                 blue = new Animal('blue', '../img/cat04.jpeg'),
                 red = new Animal('red', '../img/cat05.jpg')
                 ],
-    prior;
+    global = {
+        prior: undefined
+    };
 
 function Animal(name, photoPath){
     this.counter = 0,
@@ -25,27 +27,19 @@ function Animal(name, photoPath){
                         </div>`
 }
 function toggle_visibility(input) { // https://css-tricks.com/snippets/javascript/showhide-element/ 08/03/18
-    let idLi = document.getElementById(input),
-        touched = document.getElementsByClassName('input-touched');
-        console.log(prior);
+    let idLi = document.getElementById(input);
 
-        if(prior != undefined){
-            prior.style.visibility = 'hidden';
+        if(global.prior != undefined){
+            global.prior.style.visibility = 'hidden';
         }
-        /*if(!touched[0] == undefined){
-            touched[0].style.visibility = 'hidden';
-            touched[0].classList.remove('input-touched');
-        }*/
 
         if(idLi.style.visibility == 'hidden'){
             idLi.style.visibility = 'visible';
-            idLi.setAttribute('class',`cat-box input-touched`);
         }else{
             idLi.style.visibility = 'hidden';
         }
-        prior = idLi;
+        global.prior = idLi;
 
-        //touched = document.getElementsByClassName('input-touched');
 }
 //Display list of Cats
 for(let x = 0; x < catArray.length; x += 1){
