@@ -87,20 +87,7 @@ for(let x = 0; x < global.catArray.length; x += 1){
         catDisplay: document.getElementById('cat-display'),
         catList: document.getElementById('cat-chart__list'),
         prior: undefined,
-        toggle_visibility: function toggle_visibility(input) { // https://css-tricks.com/snippets/javascript/showhide-element/ 08/03/18
-                                let idLi = document.getElementById(input);
-    
-                                if(global.prior != undefined){
-                                    global.prior.style.visibility = 'hidden';
-                                }
-                        
-                                if(idLi.style.visibility == 'hidden'){
-                                    idLi.style.visibility = 'visible';
-                                }else{
-                                    idLi.style.visibility = 'hidden';
-                                }
-                                global.prior = idLi;}
-        Animal: function Animal(name, photoPath){
+        Animal: function(name, photoPath){
                     this.counter = 0,
                     this.name = name,
                     this.photoPath = photoPath,
@@ -117,12 +104,14 @@ for(let x = 0; x < global.catArray.length; x += 1){
     };
 
     var = octopus {
-
+        init: function(){
+            view.init();
+        }
     };
 
     var view = {
-        //Display list of Cats
-        catListDisplay: for(let x = 0; x < global.catArray.length; x += 1){
+        init: function(){         //Display list of Cats
+                        for(let x = 0; x < global.catArray.length; x += 1){
                         let z = document.createElement('li');
                         z.className = `cat-chart__list__li`;
                         z.innerHTML = global.catArray[x].name;
@@ -134,10 +123,10 @@ for(let x = 0; x < global.catArray.length; x += 1){
                             let name = catListIndividual[x].innerHTML;
                     
                             global.toggle_visibility(name);
-                        })
-                        },
-        // Display Cat Photos
-        catPhotoDisplay: for(let x = 0; x < global.catArray.length; x += 1){
+                            })
+                        }
+                                // Display Cat Photos
+                        for(let x = 0; x < global.catArray.length; x += 1){
                             let z = document.createElement('div');
                             z.className = `cat-box`;
                             z.id = `${global.catArray[x].name}`;
@@ -154,5 +143,20 @@ for(let x = 0; x < global.catArray.length; x += 1){
                                     catCounter[x].innerHTML = global.catArray[x].counter;
                                 }, false);
                         }
-    };
+        },
+
+        toggle_visibility: function(input) { // https://css-tricks.com/snippets/javascript/showhide-element/ 08/03/18
+        let idLi = document.getElementById(input);
+
+        if(global.prior != undefined){
+            global.prior.style.visibility = 'hidden';
+        }
+
+        if(idLi.style.visibility == 'hidden'){
+            idLi.style.visibility = 'visible';
+        }else{
+            idLi.style.visibility = 'hidden';
+        }
+        global.prior = idLi;
+        }
 })();
